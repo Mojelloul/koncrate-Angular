@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a routerLink="/">Accueil</a></li>
+                  <li class="breadcrumb-item"><a  routerLink="/blog">Blog</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">{{post.titre}}</li>
+                </ol>
+              </nav>
+              <h2 class="mt-1"> {{post.titre}} </h2>
+              <hr>
+
+              <img src="{{post.image}} " alt="{{post.titre}} ">
+              <p [innerHTML]="post.contenu" class="mt-5"></p>
+        </div>
+    </div>
+    
+    
+    </div>
